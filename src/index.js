@@ -1,4 +1,4 @@
-let criaHeroi = {
+/*let criaHeroi = {
     nome: "Pedro",
     idade: 39,
     tipo: {
@@ -16,3 +16,38 @@ function criacaoPersonagem (criaHeroi) {
         console.log(`"O" ${tipoClasse} "atacou usando" ${armaUsada}`)
     }
 }
+    */
+
+class criaHeroi {
+    constructor(nome, idade, tipo) {
+        this.nome = nome
+        this.idade = idade
+        this.tipo = tipo
+}
+
+    atacar() {
+        let ataque
+        switch (this.tipo) {
+            case "mago":
+                ataque = "magia"
+                break
+
+            case "guerreiro":
+                ataque = "espada"
+                break
+
+            case "monge":
+                ataque = "artes marciais"
+                break
+
+            case "ninja":
+                ataque = "shuriken"
+                break
+        }
+
+        console.log(`o ${this.tipo} atacou usando ${ataque}`)
+    }
+}
+
+let heroi = new criaHeroi("Pedro",39,"guerreiro")
+heroi.atacar()
