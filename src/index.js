@@ -1,4 +1,5 @@
-/*let criaHeroi = {
+/* JSON, funções e Loop For in
+let criaHeroi = {
     nome: "Pedro",
     idade: 39,
     tipo: {
@@ -18,6 +19,7 @@ function criacaoPersonagem (criaHeroi) {
 }
     */
 
+// utilizando Class e Swicth Case
 class criaHeroi {
     constructor(nome, idade, tipo) {
         this.nome = nome
